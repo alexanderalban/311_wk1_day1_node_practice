@@ -16,7 +16,15 @@ const sum = (arr) => {
 
 const comboSum = (arr, sum) => {
   // write code for numbers.comboSum
-
+  for (let i in arr) {
+    for (let j in arr) {
+      if (i + j === sum) {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
 }
 
 module.exports = {
